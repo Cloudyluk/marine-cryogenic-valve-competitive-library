@@ -1,5 +1,6 @@
 import { describe, expect, it } from 'vitest'
 import { valveSeries } from '../data/competitors'
+import { profileForBrand } from '../data/brandProfiles'
 import { filterSeries, toggleComparison } from './selection'
 
 describe('filterSeries', () => {
@@ -31,5 +32,12 @@ describe('competitive coverage', () => {
       'OMB FGL',
       'OMB CR-TOB',
     ]))
+  })
+
+  it('maps every product brand to a source-backed brand profile', () => {
+    expect(valveSeries.every((item) => {
+      const profile = profileForBrand(item.brand)
+      return Boolean(profile?.officialName && profile.sources.length && profile.verifiedAt)
+    })).toBe(true)
   })
 })

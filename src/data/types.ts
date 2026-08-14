@@ -5,6 +5,19 @@ export interface SourceLink {
   url: string
 }
 
+export interface BrandProfile {
+  brand: string
+  officialName: string
+  headquarters: string
+  manufacturing: string[]
+  productFamilies: string[]
+  marineLngPositioning: string[]
+  marketCoverage: string[]
+  sources: SourceLink[]
+  verifiedAt: string
+  notes: string[]
+}
+
 export interface ValveSeries {
   id: string
   brand: string
