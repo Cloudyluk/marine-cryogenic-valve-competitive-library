@@ -13,6 +13,7 @@ export const sources: Record<string, SourceLink> = {
   omb: { label: 'OMB Valves：LNG', url: 'https://www.ombvalves.com/lng/' },
   kitz: { label: 'KITZ：LNG valve products', url: 'https://www.kitz.com/en/product/lng/' },
   emersonCryogenic: { label: 'Emerson：Cryogenic valves and regulators', url: 'https://www.emerson.com/en/final-control/catalog/solutions/common-applications/cryogenic-valves' },
+  emersonEasyE: { label: 'Emerson Fisher：easy-e Cryogenic Product Bulletin', url: 'https://www.emerson.com/is/content/emerson/en/final-control/pressure-management/jt-valves/documents/product-bulletin-fisher-easy-e-cryogenic-sliding-stem-control-valves-en-122402.pdf' },
   emersonIc2: { label: 'Emerson Fisher：IC2 Cryogenic Top-Entry Control Valve', url: 'https://www.emerson.com/en/final-control/products/fisher-ic2' },
   bakerLNG: { label: 'Baker Hughes：LNG valve solutions', url: 'https://valves.bakerhughes.com/lng' },
   baker33000: { label: 'Baker Hughes Masoneilan：33000 Series', url: 'https://valves.bakerhughes.com/masoneilanrotary-control-valvesmasoneilan-triple-offset-butterfly-valves' },

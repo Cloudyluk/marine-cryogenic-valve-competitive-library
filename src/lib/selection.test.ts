@@ -77,4 +77,17 @@ describe('competitive coverage', () => {
     expect(profileForBrand('Qublock Technology')?.manufacturing.join(' ')).toContain('Korea')
     expect(profileForBrand('Tsunny Group')?.marketCoverage.join(' ')).toContain('国际贸易')
   })
+
+  it('retains official model-level specifications recovered from competitor datasheets', () => {
+    const fisher = valveSeries.find((item) => item.id === 'emerson-easy-e')
+    const mccanna = valveSeries.find((item) => item.id === 'flowserve-mccanna')
+    const gwc = valveSeries.find((item) => item.id === 'gwc-floating-ball')
+    const raysGlobe = valveSeries.find((item) => item.id === 'rays-cryo-globe')
+    const heroseSafety = valveSeries.find((item) => item.id === 'herose-06012-06016')
+    expect(fisher).toMatchObject({ minTemperature: -198, size: 'NPS 1–30（公开产品页）', connection: ['法兰式'] })
+    expect(mccanna).toMatchObject({ pressure: 'PN20–110；Class 150–600（公开产品页）', size: 'DN15–200 / NPS 1/2–6（公开产品页）' })
+    expect(gwc?.size).toBe('1/2–6 in / DN15–150（公开产品页）')
+    expect(raysGlobe).toMatchObject({ pressure: 'Class 150–2500；PN10–420（公开产品页）', size: 'NPS 1/2–24 / DN15–600（公开产品页）' })
+    expect(heroseSafety).toMatchObject({ size: 'GW 1/4、3/8、1/2 in（公开产品页）', pressure: 'PN63；整定压力 1–55 bar（公开产品页）' })
+  })
 })
