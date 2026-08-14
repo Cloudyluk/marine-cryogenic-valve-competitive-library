@@ -1,0 +1,7 @@
+:root { font-family: Inter, "Noto Sans SC", "Microsoft YaHei", system-ui, sans-serif; color: #17242b; background: #f4f9fb; font-synthesis: none; }
+* { box-sizing: border-box; }
+body { min-width: 320px; margin: 0; overflow-x: hidden; }
+button, input, select { font: inherit; }
+button { cursor: pointer; }
+button:focus-visible, a:focus-visible, select:focus-visible, input:focus-visible { outline: 3px solid #f2a65a; outline-offset: 2px; }
+a { color: inherit; }
