@@ -44,6 +44,7 @@ export const sources: Record<string, SourceLink> = {
   raysGlobe: { label: 'RAYS：Cryogenic Globe Valve', url: 'https://www.raysvalve.com/Products/cryogenic-valve/cryogenic-globe-valve/210.html' },
   raysBall: { label: 'RAYS：Side Entry Cryogenic Floating Ball Valve', url: 'https://www.raysvalve.com/Products/cryogenic-valve/cryogenic-ball-valve475/344.html' },
   raysButterfly: { label: 'RAYS：Cryogenic Butterfly Valve with Maintenance Port', url: 'https://www.raysvalve.com/Products/cryogenic-valve/cryogenic-butterfly-valve/339.html' },
+  raysTopEntry: { label: 'RAYS：Top Entry Cryogenic Floating Ball Valve', url: 'https://www.raysvalve.com/Products/cryogenic-valve/cryogenic-ball-valve475/342.html' },
   newayProfile: { label: '纽威：2024 ESG Report', url: 'https://www.newayvalve.com/upload/pdf/202510/2024%20Environmental%2C%20Social%20and%20Governance%20%28ESG%29%20Report.pdf' },
   furuiProfile: { label: '富瑞：国泰路与福新路厂区', url: 'https://en.furuiva.com/news/Guotai-Road-factory-area-of-Zhangjiagang-FURUI-Valve-Co.%2C-Ltd.-was-put-to-normal-use-10.html' },
   parkerProfile: { label: 'Parker Bestobell：Cryogenic Valves Catalogue', url: 'https://www.parker.com/content/dam/Parker-com/Literature/Instrumentation-Products-Division/Catalogs/Cryogenic-Valves-for-Industrial-Gas-Applications.pdf' },
