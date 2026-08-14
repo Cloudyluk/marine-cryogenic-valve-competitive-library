@@ -40,4 +40,13 @@ export const sources: Record<string, SourceLink> = {
   habonimProfile: { label: 'Habonim：Cryogenic Valves Catalog', url: 'https://habonim.com/wp-content/uploads/2022/04/A3-Habonim_Booklet_Cryogenic_260422_web.pdf' },
   mecaProfile: { label: 'Meca-Inox：Knowhow', url: 'https://www.meca-inox.com/en/knowhow/' },
   raysProfile: { label: 'RAYS：Company', url: 'https://www.raysvalve.com/about/' },
+  ssValve: { label: 'S&S Valve：Company Profile', url: 'https://seoheung.gobizkorea.com/mini/site/companyProfile.do' },
+  nakakita: { label: 'NAKAKITA：Marine Fluid Control Equipment Catalog', url: 'https://www.nakakita-s.co.jp/en_marine_catalog/' },
+  nakakitaProfile: { label: 'NAKAKITA：Company Profile', url: 'https://www.nakakita-s.co.jp/en/company/outline' },
+  herose: { label: 'HEROSE：Type 03841 Cryogenic Globe Valve', url: 'https://products.herose.com/en/products/cr-03841.html' },
+  heroseSafety: { label: 'HEROSE：Type 06012 / 06016 Cryogenic Safety Valves', url: 'https://products.herose.com/en/products/cr-06012-06016.html' },
+  mth: { label: 'Mt.H：HND-FGC Cryogenic Pneumatic Control Valve', url: 'https://mth.co.kr/en/pages/cryo_30.php' },
+  cryostarMarine: { label: 'CRYOSTAR：Marine LNG Fuelling and Bunkering', url: 'https://cryostar.com/datas-pdf/booklet/en/Marine-LNG-fuelling-and-bunkering.pdf' },
+  qublock: { label: 'Qublock：Cryogenic Butterfly Valves for LNG Carrier', url: 'https://info.qublock.com/' },
+  tsunny: { label: 'Tsunny：Marine Cryogenic Gate Valve', url: 'https://www.tsunnyvalve.com/marine-cryogenic-gate-valve-flanged-type/' },
 }

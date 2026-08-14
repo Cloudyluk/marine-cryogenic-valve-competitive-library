@@ -40,4 +40,16 @@ describe('competitive coverage', () => {
       return Boolean(profile?.officialName && profile.sources.length && profile.verifiedAt)
     })).toBe(true)
   })
+
+  it('includes the identified marine LNG competitors and named valve lines', () => {
+    const namedProducts = valveSeries.map((item) => item.model)
+    expect(namedProducts).toEqual(expect.arrayContaining([
+      'S&S Valve Cryogenic Valves for LNG Carrier / FLNG / FSRU',
+      'NAKAKITA Cryogenic (LNG) Butterfly Valve',
+      'HEROSE Type 03841 Cryogenic Globe / Globe-Check Valve',
+      'Mt.H HND-FGC (CC11C) 2-Way Cryogenic Pneumatic Control Valve',
+      'CRYOSTAR VP Marine LNG Fuelling and Bunkering Equipment',
+      'Tsunny Marine Cryogenic Gate Valve (Flanged Type)',
+    ]))
+  })
 })
