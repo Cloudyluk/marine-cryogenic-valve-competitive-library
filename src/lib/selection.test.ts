@@ -1,6 +1,7 @@
 import { describe, expect, it } from 'vitest'
 import { valveSeries } from '../data/competitors'
 import { profileForBrand } from '../data/brandProfiles'
+import { standardReferences } from '../data/standards'
 import { defaultFilters } from '../data/types'
 import { filterSeries, sortSeries, toggleComparison } from './selection'
 
@@ -28,6 +29,12 @@ describe('toggleComparison', () => {
 })
 
 describe('competitive coverage', () => {
+  it('provides a navigable standard index with category and use boundary', () => {
+    expect(standardReferences).toEqual(expect.arrayContaining([
+      expect.objectContaining({ code: 'ISO 21011', category: '低温基础', role: expect.any(String), note: expect.any(String) }),
+    ]))
+  })
+
   it('keeps brand and public model or series on every international record', () => {
     expect(valveSeries.length).toBeGreaterThanOrEqual(20)
     expect(new Set(valveSeries.map((item) => item.brand)).size).toBeGreaterThanOrEqual(12)
