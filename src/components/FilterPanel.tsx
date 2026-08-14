@@ -6,7 +6,7 @@ const unique = (values: string[]) => [...new Set(values)].sort()
 export function FilterPanel({ filters, items, onChange, onReset }: Props) {
   const brands = unique(items.map((item) => item.brand)); const regions = unique(items.map((item) => item.region)); const types = unique(items.map((item) => item.type)); const apps = unique(items.flatMap((item) => item.applications)); const societies = unique(items.flatMap((item) => item.classSocieties))
   return <aside className="filter-panel"><div className="filter-title"><h2>筛选条件</h2><button onClick={onReset}>重置</button></div>
-    <label>关键词<input value={filters.query} onChange={(event) => onChange('query', event.target.value)} placeholder="品牌、型号或介质" /></label>
+    <label>搜索产品或品牌<input aria-label="搜索产品或品牌" value={filters.query} onChange={(event) => onChange('query', event.target.value)} placeholder="品牌、型号、应用或介质" /></label>
     <label>品牌/地区<select aria-label="品牌/地区" value={filters.brand} onChange={(event) => onChange('brand', event.target.value)}><option value="">全部品牌</option>{brands.map((value) => <option key={value}>{value}</option>)}</select></label>
     <label>地区<select value={filters.region} onChange={(event) => onChange('region', event.target.value)}><option value="">全部地区</option>{regions.map((value) => <option key={value}>{value}</option>)}</select></label>
     <label>阀型<select aria-label="阀型" value={filters.type} onChange={(event) => onChange('type', event.target.value)}><option value="">全部</option>{types.map((value) => <option key={value}>{value}</option>)}</select></label>

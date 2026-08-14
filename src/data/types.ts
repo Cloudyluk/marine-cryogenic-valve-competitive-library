@@ -51,6 +51,8 @@ export interface FilterState {
   classSociety: string
 }
 
+export type SortKey = 'relevance' | 'brand' | 'temperature' | 'evidence'
+
 export const defaultFilters: FilterState = {
   query: '', brand: '', region: '', type: '', application: '', minTemperature: null, classSociety: '',
 }

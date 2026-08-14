@@ -1,6 +1,4 @@
-import type { FilterState, ValveSeries } from '../data/types'
-
-export type SortKey = 'relevance' | 'brand' | 'temperature' | 'evidence'
+import type { FilterState, SortKey, ValveSeries } from '../data/types'
 
 const evidenceRank = { '公开证实': 0, '公开资料推断': 1, '待厂家确认': 2 } as const
 

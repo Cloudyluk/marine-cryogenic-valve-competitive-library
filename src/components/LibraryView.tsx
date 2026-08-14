@@ -1,0 +1,7 @@
+import type { FilterState, SortKey, ValveSeries } from '../data/types'
+import { FilterPanel } from './FilterPanel'
+import { ResultsTable } from './ResultsTable'
+
+export function LibraryView({ filters, items, results, comparedIds, sortKey, onChange, onReset, onSort, onCompare, onDetail }: { filters: FilterState; items: ValveSeries[]; results: ValveSeries[]; comparedIds: string[]; sortKey: SortKey; onChange: <K extends keyof FilterState>(key: K, value: FilterState[K]) => void; onReset: () => void; onSort: (value: SortKey) => void; onCompare: (id: string) => void; onDetail: (item: ValveSeries) => void }) {
+  return <section className="workbench" id="library"><FilterPanel filters={filters} items={items} onChange={onChange} onReset={onReset} /><div className="results-area"><div className="section-heading"><div><p>竞争情报库</p><h1>{results.length} 个公开资料条目</h1></div><label className="sort-control">排序<select value={sortKey} onChange={(event) => onSort(event.target.value as SortKey)}><option value="relevance">相关度</option><option value="evidence">资料状态</option><option value="temperature">最低温度</option><option value="brand">品牌名称</option></select></label></div>{results.length ? <ResultsTable items={results} comparedIds={comparedIds} onCompare={onCompare} onDetail={onDetail} /> : <div className="empty-state"><h2>没有符合条件的产品</h2><p>可尝试清除关键词、最低温度或船级社筛选。</p><button className="profile-button" onClick={onReset}>重置条件</button></div>}</div></section>
+}
