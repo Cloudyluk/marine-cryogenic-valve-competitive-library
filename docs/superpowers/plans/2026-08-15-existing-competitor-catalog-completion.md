@@ -8,6 +8,19 @@
 
 **Tech Stack:** TypeScript, React, Vitest, Vite, GitHub Pages.
 
+## Autonomous Release Cadence
+
+Continue in the following order without waiting for a brand-by-brand request: Neway (complete), Parker Bestobell (complete), KLINGER Westad, KITZ, Emerson Fisher, Baker Hughes Masoneilan, Flowserve McCANNA/Worcester, GWC Italia, Meca-Inox, RAYS Flow Control, S&S Valve, NAKAKITA SEISAKUSHO, HEROSE, Mt.H Control Valves, Qublock Technology, Tsunny Group, Bray, ADAMS Armaturen and 富瑞阀门.
+
+For each brand, complete all four stages in one independently publishable batch:
+
+1. Crawl the accessible official catalog and list its public cryogenic product names.
+2. Compare names against `valveSeries`; write a focused failing coverage test for every missing named product.
+3. Add one official-source record per missing product, then enrich every disclosed technical field without inference.
+4. Run the full suite and production build, commit, push `main`, and mark the brand status in the audit.
+
+If an official website only publishes a generic series, a solution package or no accessible product index, record that fact in the audit rather than fabricating model records. After every four completed manufacturers, perform a parameter-completeness pass over their new records before advancing.
+
 ## Global Constraints
 
 - Use only manufacturer websites or manufacturer-issued datasheets as evidence.
