@@ -30,7 +30,7 @@
 
 **Produces:** One source-backed record each for C26, C28, C31, C32, C47, C61, C62, C73, C77, C78, C81, C83, C91, C92, C93, C94, C95 and C96, in addition to existing C47-BD/C52/C74/C82.
 
-- [ ] **Step 1: Write the failing coverage test**
+- [x] **Step 1: Write the failing coverage test**
 
 ```ts
 const habonimModels = valveSeries
@@ -59,23 +59,23 @@ expect(habonimModels).toEqual(expect.arrayContaining([
 ]))
 ```
 
-- [ ] **Step 2: Run the focused test to verify it fails**
+- [x] **Step 2: Run the focused test to verify it fails**
 
 Run: `npm run test -- --run src/lib/selection.test.ts`
 
 Expected: FAIL because the named official catalog products are absent.
 
-- [ ] **Step 3: Crawl each official Habonim product page and add only disclosed values**
+- [x] **Step 3: Crawl each official Habonim product page and add only disclosed values**
 
 Add a `sources.habonimCxx` direct URL for every model. Add one record per exact page title, use `待厂家确认` where the page omits an item, and preserve any displayed inch/DN conflict in `size` and `notes`.
 
-- [ ] **Step 4: Run focused and complete validation**
+- [x] **Step 4: Run focused and complete validation**
 
 Run: `npm run test -- --run && npm run build && git diff --check`
 
 Expected: all tests and production build pass with no whitespace errors.
 
-- [ ] **Step 5: Commit and publish**
+- [x] **Step 5: Commit and publish**
 
 ```bash
 git add src/data/sources.ts src/data/competitors.ts src/lib/selection.test.ts
@@ -94,7 +94,7 @@ git -c http.version=HTTP/1.1 push origin main
 
 **Produces:** One source-backed record each for C130, C130M, C330, C230, CR-TOP, DuEX C-S, DuEX C-T, CR-BSE, CR-BTE, CR-FC, FT, CR-FT, CR-CM, CR-TA and CR-DPC, alongside existing OMB records.
 
-- [ ] **Step 1: Write a failing OMB product-name coverage test**
+- [x] **Step 1: Write a failing OMB product-name coverage test**
 
 ```ts
 const ombModels = valveSeries.filter((item) => item.brand === 'OMB Valves').map((item) => item.model)
@@ -108,23 +108,23 @@ expect(ombModels).toEqual(expect.arrayContaining([
 ]))
 ```
 
-- [ ] **Step 2: Run the focused test to verify it fails**
+- [x] **Step 2: Run the focused test to verify it fails**
 
 Run: `npm run test -- --run src/lib/selection.test.ts`
 
 Expected: FAIL because the official OMB models are absent.
 
-- [ ] **Step 3: Crawl each official OMB product page and add source-bound records**
+- [x] **Step 3: Crawl each official OMB product page and add source-bound records**
 
 For every listed model, add its direct official source, a distinct record, and only page-supported temperature, pressure, size, connection, construction, accessories, standards and certifications. Preserve conflicting official fields verbatim with a note.
 
-- [ ] **Step 4: Run complete validation**
+- [x] **Step 4: Run complete validation**
 
 Run: `npm run test -- --run && npm run build && git diff --check`
 
 Expected: all tests and production build pass with no whitespace errors.
 
-- [ ] **Step 5: Commit and publish**
+- [x] **Step 5: Commit and publish**
 
 ```bash
 git add src/data/sources.ts src/data/competitors.ts src/lib/selection.test.ts
