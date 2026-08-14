@@ -52,4 +52,11 @@ describe('competitive coverage', () => {
       'Tsunny Marine Cryogenic Gate Valve (Flanged Type)',
     ]))
   })
+
+  it('keeps enriched company and manufacturing context for newly added competitors', () => {
+    expect(profileForBrand('HEROSE')?.headquarters).toContain('Bad Oldesloe')
+    expect(profileForBrand('CRYOSTAR')?.headquarters).toContain('Hésingue')
+    expect(profileForBrand('Qublock Technology')?.manufacturing.join(' ')).toContain('Korea')
+    expect(profileForBrand('Tsunny Group')?.marketCoverage.join(' ')).toContain('国际贸易')
+  })
 })

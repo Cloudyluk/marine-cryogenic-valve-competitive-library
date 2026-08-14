@@ -45,8 +45,12 @@ export const sources: Record<string, SourceLink> = {
   nakakitaProfile: { label: 'NAKAKITA：Company Profile', url: 'https://www.nakakita-s.co.jp/en/company/outline' },
   herose: { label: 'HEROSE：Type 03841 Cryogenic Globe Valve', url: 'https://products.herose.com/en/products/cr-03841.html' },
   heroseSafety: { label: 'HEROSE：Type 06012 / 06016 Cryogenic Safety Valves', url: 'https://products.herose.com/en/products/cr-06012-06016.html' },
+  heroseProfile: { label: 'HEROSE：Company Facts', url: 'https://produkte.herose.com/de/media-center/docs/HEROSE-Facts.pdf' },
   mth: { label: 'Mt.H：HND-FGC Cryogenic Pneumatic Control Valve', url: 'https://mth.co.kr/en/pages/cryo_30.php' },
   cryostarMarine: { label: 'CRYOSTAR：Marine LNG Fuelling and Bunkering', url: 'https://cryostar.com/datas-pdf/booklet/en/Marine-LNG-fuelling-and-bunkering.pdf' },
+  cryostarProfile: { label: 'CRYOSTAR：Cryostar France', url: 'https://cryostar.com/fr/localdealer/cryostar-france/' },
   qublock: { label: 'Qublock：Cryogenic Butterfly Valves for LNG Carrier', url: 'https://info.qublock.com/' },
+  qublockProfile: { label: 'Qublock：Company & Global Footprint', url: 'https://info.qublock.com/id' },
   tsunny: { label: 'Tsunny：Marine Cryogenic Gate Valve', url: 'https://www.tsunnyvalve.com/marine-cryogenic-gate-valve-flanged-type/' },
+  tsunnyProfile: { label: 'Tsunny：Company FAQ', url: 'https://www.tsunnyvalve.com/category/faq/' },
 }
