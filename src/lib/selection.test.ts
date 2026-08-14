@@ -48,7 +48,9 @@ describe('competitive coverage', () => {
       'KLINGER Westad Cryoseal 2X',
       'OMB FGT',
       'OMB FGL',
+      'OMB CR-FGT',
       'OMB CR-TOB',
+      'Parker Bestobell Cryoreg Cryogenic Pressure Regulator',
     ]))
   })
 
@@ -101,6 +103,9 @@ describe('competitive coverage', () => {
     const habonim = valveSeries.find((item) => item.id === 'habonim-c74')
     const mecaPy4 = valveSeries.find((item) => item.id === 'meca-inox-py4-cy')
     const kitz = valveSeries.find((item) => item.id === 'kitz-lng')
+    const ombCrFgt = valveSeries.find((item) => item.id === 'omb-cr-fgt')
+    const parkerCryoreg = valveSeries.find((item) => item.id === 'parker-bestobell-cryoreg')
+    const cryoseal = valveSeries.find((item) => item.id === 'klinger-westad-cryoseal-2x')
     expect(fisher).toMatchObject({ minTemperature: -198, size: 'NPS 1–30（公开产品页）', connection: ['法兰式'] })
     expect(mccanna).toMatchObject({ pressure: 'PN20–110；Class 150–600（公开产品页）', size: 'DN15–200 / NPS 1/2–6（公开产品页）' })
     expect(gwc?.size).toBe('1/2–6 in / DN15–150（公开产品页）')
@@ -112,5 +117,9 @@ describe('competitive coverage', () => {
     expect(habonim).toMatchObject({ size: '1/2–8 in（公开产品页）', pressure: 'Class 300 / 50 bar / 750 psi（公开产品页）' })
     expect(mecaPy4).toMatchObject({ minTemperature: -196, size: 'DN08–150（公开产品资料）', pressure: 'PN25–100（按口径，公开产品资料）' })
     expect(kitz).toMatchObject({ minTemperature: -196, construction: expect.arrayContaining(['闸阀、截止阀、止回阀、球阀（官网产品线表述）']) })
+    expect(ombCrFgt).toMatchObject({ minTemperature: -196, pressure: 'Class 150–2500（公开产品页）', size: '1/4–2 in（公开产品页）' })
+    expect(ombCrFgt?.standards).toEqual(expect.arrayContaining(['API 602', 'ISO 15761', 'API 624（逸散性排放）', 'ISO 15848（逸散性排放）']))
+    expect(parkerCryoreg).toMatchObject({ minTemperature: -196, pressure: '最高 25 bar / 360 psi（端连接相关，公开目录）', size: 'DN15（公开目录）' })
+    expect(cryoseal?.construction).toEqual(expect.arrayContaining(['ASTM A351 CF3M/CF8M 阀体', 'ASTM A351 CF8M Stellite 堆焊阀板']))
   })
 })
