@@ -191,4 +191,11 @@ describe('competitive coverage', () => {
     expect(parkerCryoreg).toMatchObject({ minTemperature: -196, pressure: '最高 25 bar / 360 psi（端连接相关，公开目录）', size: 'DN15（公开目录）' })
     expect(cryoseal?.construction).toEqual(expect.arrayContaining(['ASTM A351 CF3M/CF8M 阀体', 'ASTM A351 CF8M Stellite 堆焊阀板']))
   })
+
+  it('keeps product-series records separate from orderable model records', () => {
+    const productSeries = valveSeries.filter((item) => item.modelKind === '公开产品系列')
+
+    expect(productSeries).not.toHaveLength(0)
+    expect(productSeries.every((item) => item.notes.some((note) => /具体型号|单一订货型号|单体阀门订货型号/.test(note)))).toBe(true)
+  })
 })
