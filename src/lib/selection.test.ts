@@ -249,4 +249,18 @@ describe('competitive coverage', () => {
       'OMB CR-DPC Check Valve, Dual Plate, Cryogenic Service',
     ]))
   })
+
+  it('covers the Parker Bestobell cryogenic catalog series named by the manufacturer', () => {
+    const parkerModels = valveSeries
+      .filter((item) => item.brand === 'Parker Bestobell')
+      .map((item) => item.model)
+
+    expect(parkerModels).toEqual(expect.arrayContaining([
+      'Parker Bestobell CNB / CNS / CNT Cryogenic Manual Globe Valve Series',
+      'Parker Bestobell CNT*TA Cryogenic Tyre-Actuated Globe Valve Series',
+      'Parker Bestobell CMC / CMD Cryogenic Gate Valve Series',
+      'Parker Bestobell CTB Cryogenic Fill Manifold Assembly',
+      'Parker Bestobell CZF / CZF*A Cryogenic Ball Valve Series',
+    ]))
+  })
 })
