@@ -144,7 +144,7 @@ describe('competitive coverage', () => {
     expect(fisherIc2).toMatchObject({ minTemperature: -269, pressure: 'Class 600（公开新闻稿/手册）', size: 'NPS 1–6（NPS6 需咨询厂家，公开手册）', connection: ['BW（ASME B16.25）', 'SW（ASME B16.11）'] })
     expect(worcester).toMatchObject({ minTemperature: -253, pressure: '法兰式 Class 150–300；三片式 Class 600（公开产品页）' })
     expect(gwcTopEntry).toMatchObject({ minTemperature: -196, pressure: 'ANSI Class 150–2500（公开产品页）', size: '1/2–64 in / DN15–1600（公开产品页）' })
-    expect(habonim).toMatchObject({ size: '1/2–8 in（公开产品页）', pressure: 'Class 300 / 50 bar / 750 psi（公开产品页）' })
+    expect(habonim).toMatchObject({ size: '1/2–8 in（官网页面同时标注 DN40–DN200，待订单确认）', pressure: 'Class 300 / 50 bar / 750 psi（公开产品页）' })
     expect(mecaPy4).toMatchObject({ minTemperature: -196, size: 'DN08–150（公开产品资料）', pressure: 'PN25–100（按口径，公开产品资料）' })
     expect(kitz).toMatchObject({ minTemperature: -196, construction: expect.arrayContaining(['闸阀、截止阀、止回阀、球阀（官网产品线表述）']) })
     expect(ombCrFgt).toMatchObject({ minTemperature: -196, pressure: 'Class 150–2500（公开产品页）', size: '1/4–2 in（公开产品页）' })
