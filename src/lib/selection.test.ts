@@ -1,12 +1,23 @@
 import { describe, expect, it } from 'vitest'
 import { valveSeries } from '../data/competitors'
 import { profileForBrand } from '../data/brandProfiles'
-import { filterSeries, toggleComparison } from './selection'
+import { defaultFilters } from '../data/types'
+import { filterSeries, sortSeries, toggleComparison } from './selection'
 
 describe('filterSeries', () => {
   it('keeps only −196 °C ball valves when both filters are selected', () => {
     const filters = { query: '', brand: '', region: '', type: '球阀', application: '', minTemperature: -196, classSociety: '' }
     expect(filterSeries(valveSeries, filters).every((item) => item.type === '球阀' && item.minTemperature !== null && item.minTemperature <= -196)).toBe(true)
+  })
+
+  it('matches a keyword against brand, model, application and medium', () => {
+    expect(filterSeries(valveSeries, { ...defaultFilters, query: 'FGSS' }).length).toBeGreaterThan(0)
+    expect(filterSeries(valveSeries, { ...defaultFilters, query: '液化气体' }).length).toBeGreaterThan(0)
+  })
+
+  it('sorts by evidence level without dropping product identifiers', () => {
+    const sorted = sortSeries(valveSeries, 'evidence')
+    expect(sorted[0]).toMatchObject({ brand: expect.any(String), model: expect.any(String) })
   })
 })
 
