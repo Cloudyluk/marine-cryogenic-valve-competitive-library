@@ -41,6 +41,8 @@ export const sources: Record<string, SourceLink> = {
   habonimC74Catalog: { label: 'Habonim：C73/C74/C78 Cryogenic Catalog', url: 'https://habonim.com/wp-content/uploads/2020/08/Habonim_Catalog_Interactive_P102-P108_2021_V04_260422_v2.pdf' },
   habonimC52: { label: 'Habonim：C52 Top-Entry Cryogenic Ball Valve', url: 'https://habonim.com/wp-content/uploads/2019/09/Habonim_FC52W_Top_entry_Valve_brochure_v21_Pages.pdf' },
   habonimC52Product: { label: 'Habonim：C52 Cryogenic Top-Entry Trunnion Ball Valve', url: 'https://habonim.com/product/c52-series/' },
+  habonimC82: { label: 'Habonim：C82 Cryogenic Trunnion Mounted Ball Valve', url: 'https://habonim.com/product/c82-series/' },
+  habonimC47Bd: { label: 'Habonim：C47-BD Cryogenic Floating Ball Valve', url: 'https://habonim.com/product/c47-bd-series/' },
   meca: { label: 'Meca-Inox：Industrial Valves for LNG & Cryogenics', url: 'https://www.meca-inox.com/en/cryogenic-gas-market/' },
   mecaLng: { label: 'Meca-Inox：LNG & Natural Gas Solutions', url: 'https://www.meca-inox.com/wp-content/themes/glissando/downloads/2016_LNG_Natural_Gas_Solutions_GB.pdf' },
   rays: { label: 'RAYS：Cryogenic Valve Manufacturer for LNG Service', url: 'https://www.raysvalve.com/Products/cryogenic-valve/' },
