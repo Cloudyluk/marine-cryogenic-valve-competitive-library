@@ -8,6 +8,7 @@ export const sources: Record<string, SourceLink> = {
   newayButterfly: { label: '纽威：Cryogenic Offset Butterfly Valve', url: 'https://www.newayvalve.com/80/269' },
   furui: { label: '富瑞阀门：低温阀门产品中心', url: 'https://www.furuiva.com/product/' },
   parker: { label: 'Parker：Marine Bestobell Cryogenic Valves', url: 'https://www.parker.com/gb/en/industries/transportation-industry/marine/marine-bestobell-cryogenic-valves.html' },
+  parkerGlobe: { label: 'Parker Bestobell：Cryogenic Globe Valves', url: 'https://ph.parker.com/in/en/cryogenic-globe-valves' },
   klinger: { label: 'KLINGER Westad：Cryogenic butterfly valves', url: 'https://www.klinger-international.com/en/news/butterfly-on-the-rocks/' },
   omb: { label: 'OMB Valves：LNG', url: 'https://www.ombvalves.com/lng/' },
   kitz: { label: 'KITZ：LNG valve products', url: 'https://www.kitz.com/en/product/lng/' },

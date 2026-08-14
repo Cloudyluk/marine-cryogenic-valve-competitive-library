@@ -21,4 +21,15 @@ describe('competitive coverage', () => {
     expect(new Set(valveSeries.map((item) => item.brand)).size).toBeGreaterThanOrEqual(12)
     expect(valveSeries.every((item) => item.brand.trim().length > 0 && item.model.trim().length > 0 && item.sources.length > 0)).toBe(true)
   })
+
+  it('retains source-backed named LNG products for the established marine brands', () => {
+    const namedProducts = valveSeries.map((item) => item.model)
+    expect(namedProducts).toEqual(expect.arrayContaining([
+      'Parker Bestobell Cryogenic Globe Valves',
+      'KLINGER Westad Cryoseal 2X',
+      'OMB FGT',
+      'OMB FGL',
+      'OMB CR-TOB',
+    ]))
+  })
 })
