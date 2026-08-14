@@ -289,4 +289,18 @@ describe('competitive coverage', () => {
       'Meca-Inox 3-Way Cryogenic Ball Valve',
     )
   })
+
+  it('covers RAYS named cryogenic check, butterfly, and control products', () => {
+    const raysModels = valveSeries
+      .filter((item) => item.brand === 'RAYS Flow Control')
+      .map((item) => item.model)
+
+    expect(raysModels).toEqual(expect.arrayContaining([
+      'Cryogenic Lifting Check Valve',
+      'Cryogenic Swing Check Valve',
+      'Cryogenic High-Performance Butterfly Valve',
+      'Cryogenic Triple Eccentric Butterfly Valve',
+      'CUT701 Cryogenic Single-seat Control Valve',
+    ]))
+  })
 })
