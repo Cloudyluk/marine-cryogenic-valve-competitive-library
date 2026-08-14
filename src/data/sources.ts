@@ -18,6 +18,7 @@ export const sources: Record<string, SourceLink> = {
   ombCrFgt: { label: 'OMB：CR-FGT Cryogenic Gate Valve', url: 'https://www.ombvalves.com/products/cr-fgt/' },
   ombCrFgl: { label: 'OMB：CR-FGL Cryogenic Globe Valve', url: 'https://www.ombvalves.com/products/cr-fgl/' },
   ombCrTob: { label: 'OMB：CR-TOB Cryogenic Triple Offset Butterfly Valve', url: 'https://www.ombvalves.com/products/cr-tob/' },
+  ombC230CryoPlug: { label: 'OMB：C-230 CRYO - PLUG', url: 'https://www.ombvalves.com/products/c-230-cryo-plug/' },
   ombFgt: { label: 'OMB：FGT Forged Steel Gate Valve', url: 'https://www.ombvalves.com/products/fgt/' },
   ombFgl: { label: 'OMB：FGL Forged Steel Globe Valve', url: 'https://www.ombvalves.com/products/fgl/' },
   kitz: { label: 'KITZ：LNG valve products', url: 'https://www.kitz.com/en/product/lng/' },
