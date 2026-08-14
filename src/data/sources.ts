@@ -26,6 +26,7 @@ export const sources: Record<string, SourceLink> = {
   habonim: { label: 'Habonim：Cryogenic Valves', url: 'https://habonim.com/valves/cryogenic-valves/' },
   habonimC74: { label: 'Habonim：C74 Series', url: 'https://habonim.com/product/c74-series/' },
   meca: { label: 'Meca-Inox：Industrial Valves for LNG & Cryogenics', url: 'https://www.meca-inox.com/en/cryogenic-gas-market/' },
+  mecaLng: { label: 'Meca-Inox：LNG & Natural Gas Solutions', url: 'https://www.meca-inox.com/wp-content/themes/glissando/downloads/2016_LNG_Natural_Gas_Solutions_GB.pdf' },
   rays: { label: 'RAYS：Cryogenic Valve Manufacturer for LNG Service', url: 'https://www.raysvalve.com/Products/cryogenic-valve/' },
   raysGlobe: { label: 'RAYS：Cryogenic Globe Valve', url: 'https://www.raysvalve.com/Products/cryogenic-valve/cryogenic-globe-valve/210.html' },
   raysBall: { label: 'RAYS：Side Entry Cryogenic Floating Ball Valve', url: 'https://www.raysvalve.com/Products/cryogenic-valve/cryogenic-ball-valve475/344.html' },
