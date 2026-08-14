@@ -84,6 +84,7 @@ export const sources: Record<string, SourceLink> = {
   habonimC47Bd: { label: 'Habonim：C47-BD Cryogenic Floating Ball Valve', url: 'https://habonim.com/product/c47-bd-series/' },
   meca: { label: 'Meca-Inox：Industrial Valves for LNG & Cryogenics', url: 'https://www.meca-inox.com/en/cryogenic-gas-market/' },
   mecaLng: { label: 'Meca-Inox：LNG & Natural Gas Solutions', url: 'https://www.meca-inox.com/wp-content/themes/glissando/downloads/2016_LNG_Natural_Gas_Solutions_GB.pdf' },
+  mecaCryogenicCatalogue: { label: 'Meca-Inox：Technical Catalogue（Cryogenic / 3-way Cryogenic Valve）', url: 'https://meca-inox.com/wp-content/themes/glissando/downloads/catalogue%20V15%20FR-GB%202015_link.pdf' },
   rays: { label: 'RAYS：Cryogenic Valve Manufacturer for LNG Service', url: 'https://www.raysvalve.com/Products/cryogenic-valve/' },
   raysGlobe: { label: 'RAYS：Cryogenic Globe Valve', url: 'https://www.raysvalve.com/Products/cryogenic-valve/cryogenic-globe-valve/210.html' },
   raysBall: { label: 'RAYS：Side Entry Cryogenic Floating Ball Valve', url: 'https://www.raysvalve.com/Products/cryogenic-valve/cryogenic-ball-valve475/344.html' },

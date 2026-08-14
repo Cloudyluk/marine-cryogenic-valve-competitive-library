@@ -283,4 +283,10 @@ describe('competitive coverage', () => {
       'Trunnion Mounted Ball Valve Side Entry Bolted Body - Cryogenic',
     )
   })
+
+  it('retains Meca-Inox public three-way cryogenic ball valve category', () => {
+    expect(valveSeries.map((item) => item.model)).toContain(
+      'Meca-Inox 3-Way Cryogenic Ball Valve',
+    )
+  })
 })
