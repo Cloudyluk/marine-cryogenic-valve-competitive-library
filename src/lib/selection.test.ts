@@ -51,6 +51,8 @@ describe('competitive coverage', () => {
       'OMB CR-FGT',
       'OMB CR-TOB',
       'Parker Bestobell Cryoreg Cryogenic Pressure Regulator',
+      'Bray Tri Lok Cryogenic Triple Offset Butterfly Valve',
+      'ADAMS MAK Triple Eccentric Valve for LNG',
     ]))
   })
 
@@ -112,6 +114,8 @@ describe('competitive coverage', () => {
     const baker21000 = valveSeries.find((item) => item.id === 'baker-masoneilan-21000')
     const raysBall = valveSeries.find((item) => item.id === 'rays-side-entry-ball')
     const raysButterfly = valveSeries.find((item) => item.id === 'rays-cryo-butterfly-maintenance-port')
+    const brayTriLok = valveSeries.find((item) => item.id === 'bray-tri-lok-cryo')
+    const adamsMak = valveSeries.find((item) => item.id === 'adams-mak-lng')
     const parkerCryoreg = valveSeries.find((item) => item.id === 'parker-bestobell-cryoreg')
     const cryoseal = valveSeries.find((item) => item.id === 'klinger-westad-cryoseal-2x')
     expect(fisher).toMatchObject({ minTemperature: -198, size: 'NPS 1–30（公开产品页）', connection: ['法兰式'] })
@@ -135,6 +139,8 @@ describe('competitive coverage', () => {
     expect(baker21000).toMatchObject({ pressure: 'ANSI Class 150–2500；UNI-DIN 10–400（公开产品页）', size: '3/4–8 in / DN20–200（公开产品页）' })
     expect(raysBall).toMatchObject({ pressure: 'Class 150–300；PN16–50（公开产品页）', size: 'NPS 1/2–8 / DN15–200（公开产品页）' })
     expect(raysButterfly).toMatchObject({ minTemperature: -196, pressure: 'Class 150–300；PN10–50（公开产品页）', size: 'NPS 6–80 / DN150–2000（公开产品页）' })
+    expect(brayTriLok).toMatchObject({ minTemperature: -196, pressure: 'ASME Class 150–1500；PN10–100（船海应用手册）', size: 'NPS 3–72 / DN80–1800（船海应用手册）' })
+    expect(adamsMak).toMatchObject({ minTemperature: -196, pressure: 'PN10/16/25/40/64/100；ANSI Class 150/300/600/900/1500（官方 LNG 页）', size: 'DN80–2400 / NPS 3–96（官方 LNG 页）' })
     expect(parkerCryoreg).toMatchObject({ minTemperature: -196, pressure: '最高 25 bar / 360 psi（端连接相关，公开目录）', size: 'DN15（公开目录）' })
     expect(cryoseal?.construction).toEqual(expect.arrayContaining(['ASTM A351 CF3M/CF8M 阀体', 'ASTM A351 CF8M Stellite 堆焊阀板']))
   })
