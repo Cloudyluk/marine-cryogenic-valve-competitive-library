@@ -198,4 +198,31 @@ describe('competitive coverage', () => {
     expect(productSeries).not.toHaveLength(0)
     expect(productSeries.every((item) => item.notes.some((note) => /具体型号|单一订货型号|单体阀门订货型号/.test(note)))).toBe(true)
   })
+
+  it('covers the public Habonim cryogenic-valve catalog by named product', () => {
+    const habonimModels = valveSeries
+      .filter((item) => item.brand === 'Habonim')
+      .map((item) => item.model)
+
+    expect(habonimModels).toEqual(expect.arrayContaining([
+      'C26 Cryogenic Floating Ball Valve',
+      'C28 Cryogenic Floating Ball Valve',
+      'C31 Cryogenic Floating Ball Valve',
+      'C32 Cryogenic Floating Ball Valve',
+      'C47 Cryogenic Floating Ball Valve',
+      'C61 Cryogenic Floating Ball Valve',
+      'C62 Cryogenic Multiport Ball Valve',
+      'C73 Cryogenic Floating Ball Valve',
+      'C77 Cryogenic Floating Ball Valve',
+      'C78 Cryogenic Floating Ball Valve',
+      'C81 Cryogenic Trunnion Mounted Ball Valve',
+      'C83 Cryogenic Trunnion Mounted Ball Valve',
+      'C91 Cryogenic Trunnion Mounted Ball Valve',
+      'C92 Cryogenic Trunnion Mounted Ball Valve',
+      'C93 Cryogenic Trunnion Mounted Ball Valve',
+      'C94 Cryogenic Trunnion Mounted Ball Valve',
+      'C95 Cryogenic Trunnion Mounted Ball Valve',
+      'C96 Cryogenic Trunnion Mounted Ball Valve',
+    ]))
+  })
 })
