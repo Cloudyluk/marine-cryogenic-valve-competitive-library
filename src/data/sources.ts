@@ -15,6 +15,7 @@ export const sources: Record<string, SourceLink> = {
   emersonCryogenic: { label: 'Emerson：Cryogenic valves and regulators', url: 'https://www.emerson.com/en/final-control/catalog/solutions/common-applications/cryogenic-valves' },
   emersonEasyE: { label: 'Emerson Fisher：easy-e Cryogenic Product Bulletin', url: 'https://www.emerson.com/is/content/emerson/en/final-control/pressure-management/jt-valves/documents/product-bulletin-fisher-easy-e-cryogenic-sliding-stem-control-valves-en-122402.pdf' },
   emersonIc2: { label: 'Emerson Fisher：IC2 Cryogenic Top-Entry Control Valve', url: 'https://www.emerson.com/en/final-control/products/fisher-ic2' },
+  emersonIc2News: { label: 'Emerson：Fisher IC2 参数发布', url: 'https://www.emerson.com/en/corporate/news/2026/emersons-new-top-entry-cryogenic-valve-limits-leakage-fisher-ic2' },
   bakerLNG: { label: 'Baker Hughes：LNG valve solutions', url: 'https://valves.bakerhughes.com/lng' },
   baker33000: { label: 'Baker Hughes Masoneilan：33000 Series', url: 'https://valves.bakerhughes.com/masoneilanrotary-control-valvesmasoneilan-triple-offset-butterfly-valves' },
   baker21000: { label: 'Baker Hughes Masoneilan：21000 Series', url: 'https://valves.bakerhughes.com/masoneilanglobe-control-valvesmasoneilan-21000-series-single-port-valve' },
