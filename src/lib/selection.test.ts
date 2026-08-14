@@ -74,8 +74,19 @@ describe('competitive coverage', () => {
   it('keeps enriched company and manufacturing context for newly added competitors', () => {
     expect(profileForBrand('HEROSE')?.headquarters).toContain('Bad Oldesloe')
     expect(profileForBrand('CRYOSTAR')?.headquarters).toContain('Hésingue')
+    expect(profileForBrand('CRYOSTAR')?.marketCoverage.join(' ')).toContain('7 个业务中心')
     expect(profileForBrand('Qublock Technology')?.manufacturing.join(' ')).toContain('Korea')
     expect(profileForBrand('Tsunny Group')?.marketCoverage.join(' ')).toContain('国际贸易')
+  })
+
+  it('keeps Cryostar marine-LNG equipment as a solution record with its official scope', () => {
+    const cryostar = valveSeries.find((item) => item.id === 'cryostar-marine-bunkering')
+
+    expect(cryostar).toMatchObject({
+      construction: expect.arrayContaining(['泵、压缩机、换热器、再液化与再气化方案（官方手册）']),
+      standards: expect.arrayContaining(['PED 97/23/CE Module H/H1（方案资料）', 'ATEX（方案资料）']),
+    })
+    expect(cryostar?.pressure).toBe('待厂家确认')
   })
 
   it('retains official model-level specifications recovered from competitor datasheets', () => {
