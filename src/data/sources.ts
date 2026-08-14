@@ -65,6 +65,7 @@ export const sources: Record<string, SourceLink> = {
   herose: { label: 'HEROSE：Type 03841 Cryogenic Globe Valve', url: 'https://products.herose.com/en/products/cr-03841.html' },
   herose03841Asme: { label: 'HEROSE：Type 03841 ASME Class 300 Datasheet', url: 'https://produkte.herose.com/datenblaetter_datasheets/cryogenic/en/Typ_03841_2_en.pdf' },
   herose03841Certificates: { label: 'HEROSE：Type 03841 Certificates', url: 'https://products.herose.com/en/products/cr-03841-2.html' },
+  heroseLrCertificates: { label: 'HEROSE：Lloyd’s Register Certificates', url: 'https://produkte.herose.com/eng/services/certificates/lr_certificates.php' },
   heroseSafety: { label: 'HEROSE：Type 06012 / 06016 Cryogenic Safety Valves', url: 'https://products.herose.com/en/products/cr-06012-06016.html' },
   heroseProfile: { label: 'HEROSE：Company Facts', url: 'https://produkte.herose.com/de/media-center/docs/HEROSE-Facts.pdf' },
   mth: { label: 'Mt.H：HND-FGC Cryogenic Pneumatic Control Valve', url: 'https://mth.co.kr/en/pages/cryo_30.php' },

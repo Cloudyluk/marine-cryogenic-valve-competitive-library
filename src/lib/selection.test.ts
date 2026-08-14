@@ -168,7 +168,7 @@ describe('competitive coverage', () => {
     expect(raysTopEntry).toMatchObject({ minTemperature: -196, pressure: 'Class 150–2500；PN10–420（公开产品页）', size: 'NPS 1/2–24 / DN15–600（公开产品页）' })
     expect(raysTopEntry?.connection).toEqual(['待厂家确认'])
     expect(herose03841).toMatchObject({ minTemperature: -255, pressure: 'PN40 / ASME Class 300（DN15–150，官方数据表）', size: 'DN15–150（PN40 / Class 300，官方数据表）' })
-    expect(herose03841?.classSocieties).toEqual(['ABS（官网产品页列示）'])
+    expect(herose03841?.classSocieties).toEqual(expect.arrayContaining(['ABS（官网产品页列示）', 'LR（官网证书目录涵盖 03841）']))
     expect(parkerCryoreg).toMatchObject({ minTemperature: -196, pressure: '最高 25 bar / 360 psi（端连接相关，公开目录）', size: 'DN15（公开目录）' })
     expect(cryoseal?.construction).toEqual(expect.arrayContaining(['ASTM A351 CF3M/CF8M 阀体', 'ASTM A351 CF8M Stellite 堆焊阀板']))
   })
