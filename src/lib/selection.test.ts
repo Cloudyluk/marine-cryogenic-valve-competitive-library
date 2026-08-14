@@ -163,7 +163,7 @@ describe('competitive coverage', () => {
     expect(gwcFloating).toMatchObject({ minTemperature: -196, pressure: 'ANSI Class 150–2500（公开产品页）', size: '1/2–6 in / DN15–150（公开产品页）' })
     expect(gwcFloating?.standards).toEqual(expect.arrayContaining(['API 6D', 'BS 6364', 'ASME B16.34 / ASME VIII', 'ISO 17292 / ISO 14313 / ISO 5208']))
     expect(habonimC74?.construction).toEqual(expect.arrayContaining(['PCTFE 阀杆推力密封（官方低温目录）', 'TFM 或石墨阀杆密封（按订货代码，官方低温目录）']))
-    expect(habonimC52).toMatchObject({ minTemperature: -269, pressure: 'ANSI Class 150–300 / 20–50 bar（官方样本）' })
+    expect(habonimC52).toMatchObject({ minTemperature: -269, pressure: 'Class 300 / 50 bar / 750 psi（官方产品页）', size: '1 1/2–6 in / DN15–150（官方产品页）' })
     expect(habonimC52?.classSocieties).toEqual(expect.arrayContaining(['DNV GL', 'LR', 'BV', 'ABS', 'KR', 'RINA（均为按需，官方样本）']))
     expect(furuiLng).toMatchObject({ minTemperature: -196, pressure: 'Class 300（DN≤8 in）/ Class 600（DN≤3 in）/ Class 1500（DN≤1-1/2 in）（官方产品页）', size: 'DN≤8 in（按压力等级，官方产品页）' })
     expect(furuiLng?.standards).toEqual(expect.arrayContaining(['ISO 17292', 'BS 6364']))
