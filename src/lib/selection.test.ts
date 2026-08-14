@@ -225,4 +225,28 @@ describe('competitive coverage', () => {
       'C96 Cryogenic Trunnion Mounted Ball Valve',
     ]))
   })
+
+  it('covers the public OMB cryogenic-valve catalog by named product', () => {
+    const ombModels = valveSeries
+      .filter((item) => item.brand === 'OMB Valves')
+      .map((item) => item.model)
+
+    expect(ombModels).toEqual(expect.arrayContaining([
+      'OMB C130 Vogt Globe Cryogenic Service',
+      'OMB C130M Vogt Actuated Globe Cryogenic Service',
+      'OMB C330 Vogt Globe Cryogenic Service Fully Extractable',
+      'OMB C230 Vogt Control Globe Cryogenic Service',
+      'OMB CR-TOP Triple Offset Butterfly Valve, Top Entry, Cryogenic',
+      'OMB DuEX C-S Double Eccentric Ball Valve, Side Entry, Cryogenic',
+      'OMB DuEX C-T Double Eccentric Ball Valve, Top Entry, Cryogenic',
+      'OMB CR-BSE Ball Valve, Trunnion, Side Entry, Cryogenic',
+      'OMB CR-BTE Ball Valve, Trunnion, Top Entry, Cryogenic',
+      'OMB CR-FC Ball Valve, Floating, Side Entry, Cryogenic',
+      'OMB FT Ball Valve, Floating, Top Entry, Cryogenic',
+      'OMB CR-FT Ball Valve, Floating, Top Entry, Cryogenic',
+      'OMB CR-CM Ball Valve, Floating, Side Entry, Cryogenic',
+      'OMB CR-TA Ball Valve, Floating, Side Entry, Cryogenic',
+      'OMB CR-DPC Check Valve, Dual Plate, Cryogenic Service',
+    ]))
+  })
 })
