@@ -1,6 +1,8 @@
 import { useMemo, useState } from 'react'
+import { BrandProfileDialog } from './components/BrandProfileDialog'
+import { profileForBrand } from './data/brandProfiles'
 import { valveSeries } from './data/competitors'
-import { defaultFilters, type FilterState, type ValveSeries } from './data/types'
+import { defaultFilters, type BrandProfile, type FilterState, type ValveSeries } from './data/types'
 import { ComparisonPanel } from './components/ComparisonPanel'
 import { FilterPanel } from './components/FilterPanel'
 import { ResultsTable } from './components/ResultsTable'
@@ -11,6 +13,7 @@ export function App() {
   const [filters, setFilters] = useState<FilterState>(defaultFilters)
   const [comparedIds, setComparedIds] = useState<string[]>([])
   const [detail, setDetail] = useState<ValveSeries | null>(null)
+  const [brandProfile, setBrandProfile] = useState<BrandProfile | null>(null)
   const results = useMemo(() => filterSeries(valveSeries, filters), [filters])
   const compared = valveSeries.filter((item) => comparedIds.includes(item.id))
   const updateFilter = <K extends keyof FilterState>(key: K, value: FilterState[K]) => setFilters((current) => ({ ...current, [key]: value }))
@@ -31,9 +34,10 @@ export function App() {
         </div>
       </section>
       <section className="info-section" id="standards"><h2>标准索引</h2><p>低温阀产品通常需结合 ISO 21011、BS 6364、GB/T 24925，以及阀型、耐火、逸散排放和船舶项目规则综合判断；具体适用标准以项目规格书为准。</p></section>
-      <section className="info-section" id="method"><h2>数据说明</h2><p>“公开产品名称”对应厂商公开页面的产品名称；“公开产品系列”表示厂商公开产品线，不能替代订货型号。所有数据均保留来源和核验日期。</p></section>
+      <section className="info-section" id="method"><h2>数据说明</h2><p>“公开产品名称”对应厂商公开页面的产品名称；“公开产品系列”表示厂商公开产品线，不能替代订货型号。所有数据均保留来源和核验日期。品牌档案仅收录厂商官网或官方 PDF 已披露的信息；“官网未披露”不代表不存在。</p></section>
     </main>
     <ComparisonPanel items={compared} onRemove={(id) => setComparedIds((current) => current.filter((value) => value !== id))} />
-    {detail && <ValveDetail item={detail} onClose={() => setDetail(null)} />}
+    {detail && <ValveDetail item={detail} onClose={() => setDetail(null)} onProfile={() => setBrandProfile(profileForBrand(detail.brand) ?? null)} />}
+    {brandProfile && <BrandProfileDialog profile={brandProfile} onClose={() => setBrandProfile(null)} />}
   </div>
 }

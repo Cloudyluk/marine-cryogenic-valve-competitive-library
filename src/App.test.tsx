@@ -17,3 +17,12 @@ it('keeps brand and model in the comparison list', async () => {
   await user.click(screen.getAllByLabelText('加入对比')[0])
   expect(screen.getByText(/纽威（Neway） · Cryogenic Gate Valve/)).toBeInTheDocument()
 })
+
+it('opens the associated brand profile from a product detail', async () => {
+  const user = userEvent.setup()
+  render(<App />)
+  await user.click(screen.getAllByRole('button', { name: '查看详情' })[0])
+  await user.click(screen.getByRole('button', { name: '查看品牌档案' }))
+  expect(screen.getByRole('dialog', { name: '品牌档案' })).toBeInTheDocument()
+  expect(screen.getByText('Neway Valve (Suzhou) Co., Ltd.')).toBeInTheDocument()
+})
