@@ -8,7 +8,7 @@ export interface SourceLink {
 export interface ValveSeries {
   id: string
   brand: string
-  region: '中国' | '欧洲' | '北美'
+  region: string
   model: string
   modelKind: '公开产品系列' | '公开产品名称'
   type: string

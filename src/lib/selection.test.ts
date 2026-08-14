@@ -14,3 +14,11 @@ describe('toggleComparison', () => {
     expect(toggleComparison(['a', 'b', 'c', 'd'], 'e')).toEqual(['a', 'b', 'c', 'd'])
   })
 })
+
+describe('competitive coverage', () => {
+  it('keeps brand and public model or series on every international record', () => {
+    expect(valveSeries.length).toBeGreaterThanOrEqual(20)
+    expect(new Set(valveSeries.map((item) => item.brand)).size).toBeGreaterThanOrEqual(12)
+    expect(valveSeries.every((item) => item.brand.trim().length > 0 && item.model.trim().length > 0 && item.sources.length > 0)).toBe(true)
+  })
+})
