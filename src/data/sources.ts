@@ -7,6 +7,7 @@ export const sources: Record<string, SourceLink> = {
   newayBall: { label: '纽威：Top Entry Cryogenic Floating Ball Valve', url: 'https://www.newayvalve.com/79/243' },
   newayButterfly: { label: '纽威：Cryogenic Offset Butterfly Valve', url: 'https://www.newayvalve.com/80/269' },
   furui: { label: '富瑞阀门：低温阀门产品中心', url: 'https://www.furuiva.com/product/' },
+  furuiLng: { label: '富瑞：LNG Cryogenic Valve', url: 'https://en.furuigroup.com/product/LNG-cryogenic-valve-310.html' },
   parker: { label: 'Parker：Marine Bestobell Cryogenic Valves', url: 'https://www.parker.com/gb/en/industries/transportation-industry/marine/marine-bestobell-cryogenic-valves.html' },
   parkerGlobe: { label: 'Parker Bestobell：Cryogenic Globe Valves', url: 'https://ph.parker.com/in/en/cryogenic-globe-valves' },
   parkerCryoreg: { label: 'Parker Bestobell：Cryoreg Cryogenic Pressure Regulator', url: 'https://www.parker.com/content/dam/Parker-com/Literature/Instrumentation-Products-Division/Catalogs/Cryogenic-Valves-for-Industrial-Gas-Applications.pdf' },
