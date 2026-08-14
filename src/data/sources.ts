@@ -56,6 +56,7 @@ export const sources: Record<string, SourceLink> = {
   flowserveWorcester: { label: 'Flowserve：Worcester Cryogenic Ball Valves', url: 'https://www.flowserve.com/products/products-catalog/valves/ball-valves/floating-ball-valves/worcester-cryogenic-three-piece-flanged-ball-valves/' },
   gwcFloating: { label: 'GWC：Floating Ball Valve - Cryogenic', url: 'https://www.gwcitalia.com/products/lng/floating-ball-valve-cryogenic/' },
   gwcTrunnion: { label: 'GWC：Top Entry Trunnion Ball Valve - Cryogenic', url: 'https://gwcitalia.com/products/lng/trunnion-mounted-ball-valve-top-entry-cryogenic/' },
+  gwcTrunnionSideEntry: { label: 'GWC：Trunnion Mounted Ball Valve Side Entry Bolted Body - Cryogenic', url: 'https://gwcitalia.com/products/lng/trunnion-mounted-ball-valve-side-entry-bolted-body-cryogenic/' },
   habonim: { label: 'Habonim：Cryogenic Valves', url: 'https://habonim.com/valves/cryogenic-valves/' },
   habonimC74: { label: 'Habonim：C74 Series', url: 'https://habonim.com/product/c74-series/' },
   habonimC74Catalog: { label: 'Habonim：C73/C74/C78 Cryogenic Catalog', url: 'https://habonim.com/wp-content/uploads/2020/08/Habonim_Catalog_Interactive_P102-P108_2021_V04_260422_v2.pdf' },

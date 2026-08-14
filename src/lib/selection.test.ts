@@ -277,4 +277,10 @@ describe('competitive coverage', () => {
       'Side Entry Cryogenic Trunnion Mounted Ball Valve',
     ]))
   })
+
+  it('covers the GWC side-entry cryogenic trunnion ball valve', () => {
+    expect(valveSeries.map((item) => item.model)).toContain(
+      'Trunnion Mounted Ball Valve Side Entry Bolted Body - Cryogenic',
+    )
+  })
 })
