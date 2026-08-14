@@ -53,6 +53,9 @@ describe('competitive coverage', () => {
       'Parker Bestobell Cryoreg Cryogenic Pressure Regulator',
       'Bray Tri Lok Cryogenic Triple Offset Butterfly Valve',
       'ADAMS MAK Triple Eccentric Valve for LNG',
+      'Parker Bestobell Marine Globe Valve for Liquid Hydrogen',
+      'Parker Bestobell Lift Check Valve for Liquid Hydrogen',
+      'KITZ Large Ball Valve for Cryogenic Liquid Hydrogen',
     ]))
   })
 
@@ -116,6 +119,9 @@ describe('competitive coverage', () => {
     const raysButterfly = valveSeries.find((item) => item.id === 'rays-cryo-butterfly-maintenance-port')
     const brayTriLok = valveSeries.find((item) => item.id === 'bray-tri-lok-cryo')
     const adamsMak = valveSeries.find((item) => item.id === 'adams-mak-lng')
+    const parkerMarineLh2Globe = valveSeries.find((item) => item.id === 'parker-bestobell-marine-lh2-globe')
+    const parkerLh2Check = valveSeries.find((item) => item.id === 'parker-bestobell-lh2-lift-check')
+    const kitzLh2Ball = valveSeries.find((item) => item.id === 'kitz-lh2-large-ball')
     const parkerCryoreg = valveSeries.find((item) => item.id === 'parker-bestobell-cryoreg')
     const cryoseal = valveSeries.find((item) => item.id === 'klinger-westad-cryoseal-2x')
     expect(fisher).toMatchObject({ minTemperature: -198, size: 'NPS 1–30（公开产品页）', connection: ['法兰式'] })
@@ -123,7 +129,7 @@ describe('competitive coverage', () => {
     expect(gwc?.size).toBe('1/2–6 in / DN15–150（公开产品页）')
     expect(raysGlobe).toMatchObject({ pressure: 'Class 150–2500；PN10–420（公开产品页）', size: 'NPS 1/2–24 / DN15–600（公开产品页）' })
     expect(heroseSafety).toMatchObject({ size: 'GW 1/4、3/8、1/2 in（公开产品页）', pressure: 'PN63；整定压力 1–55 bar（公开产品页）' })
-    expect(fisherIc2).toMatchObject({ minTemperature: -269, pressure: 'Class 600（公开新闻稿）', size: 'NPS 1–4 / DN25–100（公开新闻稿）' })
+    expect(fisherIc2).toMatchObject({ minTemperature: -269, pressure: 'Class 600（公开新闻稿/手册）', size: 'NPS 1–6（NPS6 需咨询厂家，公开手册）', connection: ['BW（ASME B16.25）', 'SW（ASME B16.11）'] })
     expect(worcester).toMatchObject({ minTemperature: -253, pressure: '法兰式 Class 150–300；三片式 Class 600（公开产品页）' })
     expect(gwcTopEntry).toMatchObject({ minTemperature: -196, pressure: 'ANSI Class 150–2500（公开产品页）', size: '1/2–64 in / DN15–1600（公开产品页）' })
     expect(habonim).toMatchObject({ size: '1/2–8 in（公开产品页）', pressure: 'Class 300 / 50 bar / 750 psi（公开产品页）' })
@@ -141,6 +147,9 @@ describe('competitive coverage', () => {
     expect(raysButterfly).toMatchObject({ minTemperature: -196, pressure: 'Class 150–300；PN10–50（公开产品页）', size: 'NPS 6–80 / DN150–2000（公开产品页）' })
     expect(brayTriLok).toMatchObject({ minTemperature: -196, pressure: 'ASME Class 150–1500；PN10–100（船海应用手册）', size: 'NPS 3–72 / DN80–1800（船海应用手册）' })
     expect(adamsMak).toMatchObject({ minTemperature: -196, pressure: 'PN10/16/25/40/64/100；ANSI Class 150/300/600/900/1500（官方 LNG 页）', size: 'DN80–2400 / NPS 3–96（官方 LNG 页）' })
+    expect(parkerMarineLh2Globe).toMatchObject({ minTemperature: -253, pressure: '最高 50 bar / 725 psi（公开资料）', size: 'DN15–100 / NPS 1/2–4（公开资料）' })
+    expect(parkerLh2Check).toMatchObject({ minTemperature: -253, pressure: '最高 50 bar / 725 psi（公开资料）', size: 'DN15–100 / NPS 1/2–4（公开资料）' })
+    expect(kitzLh2Ball).toMatchObject({ minTemperature: -253, pressure: '待厂家确认', size: '待厂家确认' })
     expect(parkerCryoreg).toMatchObject({ minTemperature: -196, pressure: '最高 25 bar / 360 psi（端连接相关，公开目录）', size: 'DN15（公开目录）' })
     expect(cryoseal?.construction).toEqual(expect.arrayContaining(['ASTM A351 CF3M/CF8M 阀体', 'ASTM A351 CF8M Stellite 堆焊阀板']))
   })
