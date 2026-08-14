@@ -3,6 +3,11 @@ import type { SourceLink } from './types'
 export const sources: Record<string, SourceLink> = {
   newayShipping: { label: '纽威：Cryogenic Valve for Shipping', url: 'https://www.newayvalve.com/upload/pdf/202302/Cryogenic%20Valve%20for%20Shipping.pdf' },
   newayGate: { label: '纽威：Cryogenic Gate Valve', url: 'https://www.newayvalve.com/76/239' },
+  newayCheck: { label: '纽威：Cryogenic Check Valve', url: 'https://www.newayvalve.com/78/241' },
+  newayControl: { label: '纽威：Cryogenic Control Valve', url: 'https://www.newayvalve.com/81/270' },
+  newayTopTrunnion: { label: '纽威：Top Entry Cryogenic Trunnion Mounted Ball Valve', url: 'https://www.newayvalve.com/79/206' },
+  newaySideFloating: { label: '纽威：Side Entry Cryogenic Floating Ball Valve', url: 'https://www.newayvalve.com/79/203' },
+  newaySideTrunnion: { label: '纽威：Side Entry Cryogenic Trunnion Mounted Ball Valve', url: 'https://www.newayvalve.com/79/268' },
   newayGlobe: { label: '纽威：Cryogenic Globe Valve', url: 'https://www.newayvalve.com/77/240' },
   newayBall: { label: '纽威：Top Entry Cryogenic Floating Ball Valve', url: 'https://www.newayvalve.com/79/243' },
   newayButterfly: { label: '纽威：Cryogenic Offset Butterfly Valve', url: 'https://www.newayvalve.com/80/269' },

@@ -263,4 +263,18 @@ describe('competitive coverage', () => {
       'Parker Bestobell CZF / CZF*A Cryogenic Ball Valve Series',
     ]))
   })
+
+  it('covers the remaining public Neway cryogenic valve product lines', () => {
+    const newayModels = valveSeries
+      .filter((item) => item.brand === '纽威（Neway）')
+      .map((item) => item.model)
+
+    expect(newayModels).toEqual(expect.arrayContaining([
+      'Cryogenic Check Valve',
+      'Cryogenic Control Valve',
+      'Top Entry Cryogenic Trunnion Mounted Ball Valve',
+      'Side Entry Cryogenic Floating Ball Valve',
+      'Side Entry Cryogenic Trunnion Mounted Ball Valve',
+    ]))
+  })
 })
