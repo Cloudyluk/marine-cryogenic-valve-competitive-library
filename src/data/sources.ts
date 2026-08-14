@@ -29,6 +29,7 @@ export const sources: Record<string, SourceLink> = {
   bakerLNG: { label: 'Baker Hughes：LNG valve solutions', url: 'https://valves.bakerhughes.com/lng' },
   baker33000: { label: 'Baker Hughes Masoneilan：33000 Series', url: 'https://valves.bakerhughes.com/masoneilanrotary-control-valvesmasoneilan-triple-offset-butterfly-valves' },
   baker21000: { label: 'Baker Hughes Masoneilan：21000 Series', url: 'https://valves.bakerhughes.com/masoneilanglobe-control-valvesmasoneilan-21000-series-single-port-valve' },
+  baker21000Eb: { label: 'Baker Hughes Masoneilan：21000-EB Cryogenic Control Valve Appendix', url: 'https://dam.bakerhughes.com/m/28259d32c829d851/original/Masoneilan-21000-EB-Cryogenic-version-Appendix-to-21000-Globe-Valve-Manual-English.pdf' },
   flowserveMccanna: { label: 'Flowserve：McCANNA Cryogenic Ball Valve', url: 'https://www.flowserve.com/products/products-catalog/valves/ball-valves/floating-ball-valves/mccanna-floating-ball-valve-cryogenic/' },
   flowserveWorcester: { label: 'Flowserve：Worcester Cryogenic Ball Valves', url: 'https://www.flowserve.com/products/products-catalog/valves/ball-valves/floating-ball-valves/worcester-cryogenic-three-piece-flanged-ball-valves/' },
   gwcFloating: { label: 'GWC：Floating Ball Valve - Cryogenic', url: 'https://www.gwcitalia.com/products/lng/floating-ball-valve-cryogenic/' },
