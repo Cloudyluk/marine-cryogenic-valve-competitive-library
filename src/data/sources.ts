@@ -76,6 +76,7 @@ export const sources: Record<string, SourceLink> = {
   tsunny: { label: 'Tsunny：Marine Cryogenic Gate Valve', url: 'https://www.tsunnyvalve.com/marine-cryogenic-gate-valve-flanged-type/' },
   tsunnyProfile: { label: 'Tsunny：Company FAQ', url: 'https://www.tsunnyvalve.com/category/faq/' },
   brayTriLok: { label: 'Bray：Tri Lok Cryogenic Triple Offset Butterfly Valve', url: 'https://www.bray.com/valves-actuators-controls/butterfly-valves/triple-offset-butterfly-valves/tri-lok-triple-offset-butterfly-valve' },
+  brayMccannalok: { label: 'Bray：McCannalok Cryogenic High Performance Butterfly Valve', url: 'https://www.bray.com/valves-actuators-controls/butterfly-valves/high-performance-butterfly-valves/bray-mccannalok-cryogenic-high-performance-butterfly-valve' },
   brayMarine: { label: 'Bray：Solutions for Ship and Marine Industry', url: 'https://www.bray.com/docs/default-source/manuals-guides/application-guides/knowledge-center/en-soulutions-for-ship-and-marine-industry.pdf?sfvrsn=c9ebeca8_5' },
   adamsLng: { label: 'ADAMS：MAK Triple Eccentric Valves for LNG', url: 'https://adams-armaturen.de/wp/adams-usa/applications/oil-and-gas/lng/' },
 }
