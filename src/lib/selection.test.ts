@@ -162,6 +162,9 @@ describe('competitive coverage', () => {
     expect(parkerMarineLh2Globe).toMatchObject({ minTemperature: -253, pressure: '最高 50 bar / 725 psi（公开资料）', size: 'DN15–100 / NPS 1/2–4（公开资料）' })
     expect(parkerLh2Check).toMatchObject({ minTemperature: -253, pressure: '最高 50 bar / 725 psi（公开资料）', size: 'DN15–100 / NPS 1/2–4（公开资料）' })
     expect(kitzLh2Ball).toMatchObject({ minTemperature: -253, pressure: '待厂家确认', size: '待厂家确认' })
+    expect(kitzLh2Ball?.notes).toEqual(expect.arrayContaining([
+      expect.stringContaining('研发中，处于实际温度试验阶段'),
+    ]))
     expect(gwcFloating).toMatchObject({ minTemperature: -196, pressure: 'ANSI Class 150–2500（公开产品页）', size: '1/2–6 in / DN15–150（公开产品页）' })
     expect(gwcFloating?.standards).toEqual(expect.arrayContaining(['API 6D', 'BS 6364', 'ASME B16.34 / ASME VIII', 'ISO 17292 / ISO 14313 / ISO 5208']))
     expect(habonimC74?.construction).toEqual(expect.arrayContaining(['PCTFE 阀杆推力密封（官方低温目录）', 'TFM 或石墨阀杆密封（按订货代码，官方低温目录）']))

@@ -57,6 +57,7 @@ export const sources: Record<string, SourceLink> = {
   ombProfile: { label: 'OMB：发展与制造布局', url: 'https://www.ombvalves.com/history/' },
   kitzProfile: { label: 'KITZ：Corporate Report', url: 'https://www.kitz.com/en/pdf/company/report/corporate_report_2022_e_all.pdf' },
   kitzLh2: { label: 'KITZ：Liquid Hydrogen Valve Development', url: 'https://www.kitz.com/english/ir/pdf/results_presentation_2022.pdf' },
+  kitzLh2Status: { label: 'KITZ：FY2022 Q2 Results Presentation（液氢大口径球阀开发状态）', url: 'https://www.kitz.com/english/ir/pdf/results_presentation_2022q2.pdf' },
   emersonProfile: { label: 'Emerson Fisher：Control Valves Catalog', url: 'https://www.emerson.com/is/content/emerson/en/final-control/flow-controls/documents/brochure-catalog-of-fisher-control-valves-and-instruments_en.pdf' },
   bakerProfile: { label: 'Baker Hughes：Global Valve Aftermarket Centers', url: 'https://valves.bakerhughes.com/global-amc' },
   flowserveProfile: { label: 'Flowserve：Quick Response Centers', url: 'https://www.flowserve.com/services/quick-response-centers/' },
